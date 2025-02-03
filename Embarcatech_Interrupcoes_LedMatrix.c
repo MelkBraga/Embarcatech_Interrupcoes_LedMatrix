@@ -225,7 +225,7 @@ void setup() {
 int main() {
     setup();
     repeating_timer_t timer;
-    add_repeating_timer_ms(90, (repeating_timer_callback_t) piscar_led_rgb, NULL, &timer);
+    add_repeating_timer_ms(200, (repeating_timer_callback_t) piscar_led_rgb, NULL, &timer);
     while (true) {
         if (atualizar_display) {
             exibir_numero(numero);
